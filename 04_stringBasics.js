@@ -64,3 +64,50 @@ var beforeTrim = city.length;
 var cityAfterEndTrim = city.trimEnd();
 var lengthAfterEndTrim = cityAfterEndTrim.length;
 console.log(lengthAfterEndTrim);
+
+console.log("==============includes()============");
+var result = greet.includes('Morning');
+console.log("Is Morning word available:",result);
+var result = greet.includes('nin');
+console.log("Is nin word available:",result);
+var result = greet.includes('good');
+console.log("Is good word available:",result);
+
+console.log("============search()================");
+var greet = "Good Morning";
+var result = greet.search('orn');
+console.log(result);
+var result = greet.search('after');
+console.log(result);
+
+console.log("============slice()================");
+var greet = 'Hello Good Morning!';
+var result = greet.slice(6);
+console.log(result);
+
+var result = greet.slice(6,10);
+console.log(result);
+
+console.log("============split()================");
+var result = greet.split(" ");
+console.log(result);
+
+//WAP to count the total number of words
+var str = "I am UI Developer";
+var words = str.split(" ");
+console.log(words);
+console.log(typeof words);
+console.log('Total words is:',words.length);
+console.log("==============String Template=======`======");
+//console.log("I am \"UI\" Developer"); we cant use single or double cot in single or double cot again hence we use back tick then cot in string template.
+//now by using back tick-->
+console.log(`I am "UI" Developer`);
+var num1 = 10;
+var num2 = 20;
+var result = num1 + num2;
+//console.log("Addition of",num1,"and",num2,"is:",result);
+//Now by using back tick-->
+console.log(`Addition of ${num1} and ${num2} is:${result}`);
+
+
+console.log();
