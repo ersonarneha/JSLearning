@@ -9,6 +9,11 @@ var num = 13;
 var result = num % 2 == 0 ? "EVEN" : "ODD";
 console.log(`Given number is ${num} ==> ${result}`);
 
-
-
-
+function maleMarriageEligibility(gender,age,boyName){
+    var result = gender == `Male` && age>=21
+    ? `Hey ${boyName}  you are eligible for marriage,Congrats`
+    :`Sorry,${boyName} you are not eligible,try next time`;
+    return result
+}
+var result = maleMarriageEligibility("Male","25","Billgates")
+console.log(result);
