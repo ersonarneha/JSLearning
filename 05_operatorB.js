@@ -25,4 +25,3 @@ function wordLength(word) {
 wordLength("JavaScript");
 wordLength("developer");
 wordLength("Google");
-``  `   `
